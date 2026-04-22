@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahadev Platform</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];
+t=b.createElement(e);t.async=!0;
+t.src=v;
+s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s);
+}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', 'YOUR_PIXEL_ID'); 
+fbq('track', 'PageView');
+</script>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+</noscript>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+}
+
+.header {
+    padding:20px;
+    font-size:24px;
+    font-weight:bold;
+    background:#111827;
+}
+
+.container {
+    padding:30px 15px;
+}
+
+.box {
+    background:#1e293b;
+    margin:15px;
+    padding:20px;
+    border-radius:10px;
+}
+
+.btn {
+    display:block;
+    margin:15px auto;
+    padding:15px;
+    width:80%;
+    max-width:300px;
+    background:#22c55e;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+}
+
+.btn.secondary {
+    background:#3b82f6;
+}
+
+.footer {
+    margin-top:20px;
+    font-size:13px;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+🚩 Mahadev Platform
+</div>
+
+<div class="container">
+
+<div class="box">
+<h2>New User?</h2>
+<p>Create your new ID and start</p>
+
+<a href="https://wa.me/91XXXXXXXXXX?text=I want new ID" 
+onclick="fbq('track', 'Lead', {content_name: 'New ID Button'});" 
+class="btn">
+Create New ID
+</a>
+
+</div>
+
+<div class="box">
+<h2>Already Have ID?</h2>
+<p>Continue with your active number</p>
+
+<a href="https://wa.me/91XXXXXXXXXX?text=I have active ID" 
+onclick="fbq('track', 'Contact', {content_name: 'Active ID Button'});" 
+class="btn secondary">
+Login / Continue
+</a>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2026 Mahadev. All rights reserved.
+</div>
+
+</body>
+</html>
